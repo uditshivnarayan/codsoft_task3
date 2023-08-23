@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="btn" id="keysy" onclick="clearDisplay()">AC</button>
+            <button class="btn" id="keysy" onclick="backspace()">⌫</button>
+            <button class="btn" id="keysy" onclick="calculatePercentage()">%</button>
+            <button class="btn" id="keysy" onclick="appendToDisplay('/')">&divide;</button>
+            <button class="btn" onclick="appendToDisplay('1')">1</button>
+            <button class="btn" onclick="appendToDisplay('2')">2</button>
+            <button class="btn" onclick="appendToDisplay('3')">3</button>
+            <button class="btn" id="keysy" onclick="appendToDisplay('*')">&times;</button>
+            <button class="btn" onclick="appendToDisplay('4')">4</button>
+            <button class="btn" onclick="appendToDisplay('5')">5</button>
+            <button class="btn" onclick="appendToDisplay('6')">6</button>
+            <button class="btn" id="keysy" onclick="appendToDisplay('-')">–</button>
+            <button class="btn" onclick="appendToDisplay('7')">7</button>
+            <button class="btn" onclick="appendToDisplay('8')">8</button>
+            <button class="btn" onclick="appendToDisplay('9')">9</button>
+            <button class="btn" id="keysy" onclick="appendToDisplay('+')">+</button>
+        </div>
+        <div class="key">
+            <button class="btn" id="zero" onclick="appendToDisplay('0')">0</button>
+            <button class="btn" id="point" onclick="appendToDisplay('.')">.</button>
+            <button class="btn" id="result" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
